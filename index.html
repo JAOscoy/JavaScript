@@ -2,17 +2,42 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JS Starter</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <title>Lista de actividades</title>
+  <meta charset="UTF-8" />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+
+
 </head>
 
 <body>
-<h1>Hello World!</h1>
+  <div class="jumbotron">
+    <h1 id="titulo" class="text-center">To Do List</h1>
+    <form>
+      <div class="form-group">
+        <input id="todo-text" class="form-control" />
+      </div>
+      <button id="add-btn" type="button" class="btn btn-block btn-success">
+        Add
+      </button>
+    </form>
+  </div>
 
-<script src="script.js"></script>
+  <ul id="todo-list" class="list-group">
+    <li class="list-group-item">
+      <span class="todo-text">Nueva tarea </span>
+      <button id="Borrar" class="btn btn-outline-danger">Eliminar</button>
+    </li>
+  </ul>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
