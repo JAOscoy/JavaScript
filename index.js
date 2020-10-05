@@ -58,11 +58,13 @@ button.addEventListener('click', function () {
     let span = document.createElement('span');
     let button = document.createElement('button');
     span.classList.add("todo-text");
-    button.setAttribute("id", "Borrar")
     button.classList.add("btn-outline-danger");
     button.classList.add("btn");
     span.innerText = buly + ' ';
     button.innerText = "Eliminar";
+    button.addEventListener('click', function(){
+        ul.removeChild(li)
+    })
     li.appendChild(span);
     li.appendChild(button);
     ul.appendChild(li);
